@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- package metadata -->
+    <PackageId>Streamline.Messaging</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Richard Garcia</Authors>
+    <Description>Streamline.Messaging is a simple abstraction for consuming and publishing messages with support for topics and queues using NATS.</Description>
+    <!-- end package metadata -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7" />
+    <PackageReference Include="NATS.Client" Version="1.1.8" />
+  </ItemGroup>
+
+</Project>
