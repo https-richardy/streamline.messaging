@@ -1,3 +1,5 @@
+using Streamline.Messaging.Abstractions;
+
 namespace Streamline.Messaging.TestSuite;
 
 public class MessagingIntegrationTests(NatsFixture fixture) :

@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Streamline.Messaging.Abstractions;
 using Streamline.Messaging.Implementations;
 
 namespace Streamline.Messaging.Extensions;

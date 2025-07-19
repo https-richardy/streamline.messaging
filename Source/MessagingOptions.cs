@@ -1,3 +1,4 @@
+using Streamline.Messaging.Abstractions;
 using Streamline.Messaging.Builders;
 
 namespace Streamline.Messaging;

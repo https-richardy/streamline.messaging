@@ -1,3 +1,5 @@
+using Streamline.Messaging.Abstractions;
+
 namespace Streamline.Messaging.TestSuite.Stubs;
 
 public sealed record SampleMessage : IMessage

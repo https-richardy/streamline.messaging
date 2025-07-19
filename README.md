@@ -82,3 +82,22 @@ public sealed class SampleHandler(IMessageProducer messageProducer) :
     }
 }
 ```
+
+---
+
+## ⚠️ Note About Abstractions
+
+If you prefer to **keep your domain and application layers decoupled from infrastructure**, or are following **Clean Architecture** principles, consider using the separate package:
+
+### [Streamline.Messaging.Abstractions](https://github.com/https-richardy/streamline.messaging.abstractions)
+
+This package provides **only the messaging interfaces and contracts** — no implementation. Perfect for defining messaging contracts in shared libraries, writing unit tests, and keeping your domain clean.
+
+### Installation
+
+You can install the abstractions package via NuGet:
+
+```bash
+dotnet add package Streamline.Messaging.Abstractions
+```
+---

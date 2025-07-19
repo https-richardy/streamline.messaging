@@ -1,3 +1,5 @@
+using Streamline.Messaging.Abstractions;
+
 namespace Streamline.Messaging.Implementations;
 
 public class NatsMessageProducer : IMessageProducer, IDisposable
