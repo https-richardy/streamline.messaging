@@ -35,7 +35,7 @@ jobs:
         elif [[ "${GITHUB_REF}" == "refs/heads/development" ]]; then
           VERSION="${BASE_VERSION}-beta.${GITHUB_RUN_NUMBER}"
         else
-          echo "branch not configured for publication"
+          echo "current branch is not configured for publication. aborting..."
           exit 1
         fi
 
