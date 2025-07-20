@@ -52,13 +52,12 @@ Inside your Program.cs
 builder.Services.AddMessaging(options =>
 {
     options.AddConsumer<OrderCreatedEvent, OrderCreatedHandler>()
-           .FromQueue("orders.created");
+           .FromQueue("orders.created"); // You can also use .FromTopic("some.topic") if preferred.
 
     options.AddProducer<OrderCreatedEvent>()
-           .FromQueue("orders.created");
+           .ToTopic("orders.created");
 });
 ````
-> You can also use .FromTopic("some.topic") if preferred.
 
 ### 5. Publish a Message
 
