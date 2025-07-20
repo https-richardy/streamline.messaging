@@ -14,7 +14,7 @@ public sealed class ProducerBuilder
         _messageType = messageType;
     }
 
-    public MessagingOptions FromTopic(string subject)
+    public MessagingOptions ToTopic(string subject)
     {
         _subject = subject;
 
@@ -23,7 +23,7 @@ public sealed class ProducerBuilder
         return _options;
     }
 
-    public MessagingOptions FromQueue(string queueGroup)
+    public MessagingOptions ToQueue(string queueGroup)
     {
         _queueGroup = queueGroup;
         _subject = _messageType.Name;

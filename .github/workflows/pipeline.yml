@@ -25,10 +25,13 @@ jobs:
     - name: Build project
       run: dotnet build -c Release
 
+    - name: run tests
+      run: dotnet test --no-build --verbosity normal
+
     - name: set version and pack
       id: pack
       run: |
-        BASE_VERSION="1.0.0"
+        BASE_VERSION="1.0"
 
         if [[ "${GITHUB_REF}" == "refs/heads/master" ]]; then
           VERSION="${BASE_VERSION}.${GITHUB_RUN_NUMBER}"

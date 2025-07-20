@@ -23,7 +23,7 @@ public class MessagingIntegrationTests(NatsFixture fixture) :
                 .FromTopic("sample.message");
 
             options.AddProducer<SampleMessage>()
-                .FromTopic("sample.message");
+                .ToTopic("sample.message");
         });
 
         using var provider = services.BuildServiceProvider();
@@ -67,7 +67,7 @@ public class MessagingIntegrationTests(NatsFixture fixture) :
                 .FromQueue("sample.message.queue");
 
             options.AddProducer<SampleMessage>()
-                .FromQueue("sample.message.queue");
+                .ToTopic("sample.message.queue");
         });
 
         using var provider = services.BuildServiceProvider();

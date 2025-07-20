@@ -7,6 +7,6 @@ public sealed class SampleMessageHandler(SampleMessageService service) :
 {
     public async Task HandleAsync(SampleMessage message, CancellationToken cancellationToken = default)
     {
-        await Task.Run(() =>service.ChangeContent(message));
+        await Task.Run(() => service.ChangeContent(message));
     }
 }
